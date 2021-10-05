@@ -1,8 +1,32 @@
-// import functions and grab DOM elements
+import { answers } from './answers.js';
 
+// import functions and grab DOM elements
+const questionButton = document.getElementById('question');
+const submitButton = document.getElementById('submit');
+const answerDisplay = document.getElementById('answer-display');
+
+const randomNum = (max)=>{
+    return Math.ceil(Math.random() * 10);
+};
+
+const randomIdx = randomNum(answers.length);
 // initialize global state
 
+let getRandomNum = Math.ceil(Math.random() * 10);
+
 // set event listeners 
+
+submitButton.addEventListener('click', ()=> {
+   const randomIdx = randomNum(answers.length);
+   answerDisplay.textContent = answers[randomIdx];
+});
+
+questionButton.addEventListener('click', ()=>{
+
+});
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+
+  
