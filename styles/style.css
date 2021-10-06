@@ -36,14 +36,14 @@ width: 500px;
 }
 
 #submit {
-    padding: 100px;
+    padding: 50px;
     border: 5px solid #e953da;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     background-color: #142f48;
     color: white;
     width: 500px;
-    height: 500%;
+
 
 }
 
@@ -52,7 +52,7 @@ width: 500px;
     font-size: 2rem;
     font-family: 'Oldenburg', cursive;
     margin: 5px;
-    padding: 5px;
+    padding: 15px;
 }
 
 main {
