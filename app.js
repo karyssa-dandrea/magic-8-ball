@@ -6,19 +6,16 @@ const submitButton = document.getElementById('submit');
 const answerDisplay = document.getElementById('answer-display');
 
 const randomNum = (max)=>{
-    return Math.ceil(Math.random() * 10);
+    return Math.ceil(Math.random() * max);
 };
 
-const randomIdx = randomNum(answers.length);
 // initialize global state
-
-let getRandomNum = Math.ceil(Math.random() * 10);
 
 // set event listeners 
 
 submitButton.addEventListener('click', ()=> {
-   const randomIdx = randomNum(answers.length);
-   answerDisplay.textContent = answers[randomIdx];
+    const randomIdx = randomNum(answers.length);
+    answerDisplay.textContent = answers[randomIdx];
 });
 
 questionButton.addEventListener('click', ()=>{
