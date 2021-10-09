@@ -5,8 +5,8 @@ describe('Example Test', ()=>{
     });
 
     describe('HTML elements', ()=>{   
-        it('contains the magic 8 ball gif', ()=>{
-            cy.get('.8ball-.gif').should('be.visible');
+        it('contains an h1', ()=>{
+            cy.get('h1').should('be.visible');
         });
     });
 });

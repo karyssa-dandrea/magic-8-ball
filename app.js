@@ -6,7 +6,7 @@ const submitButton = document.getElementById('submit');
 const answerDisplay = document.getElementById('answer-display');
 
 const randomNum = (max)=>{
-    return Math.ceil(Math.random() * max);
+    return (Math.floor(Math.random() * max) + 1);
 };
 
 // initialize global state
